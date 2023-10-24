@@ -1,3 +1,8 @@
 :root{
+  --white: #fff;
+
+  --text-light: var(--white);
+  --text-gray: #CFCFCF;
+
   --dark-gradient: linear-gradient(0deg, #211F20 0%, #44403F 100%);
 }
