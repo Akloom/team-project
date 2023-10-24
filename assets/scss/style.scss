@@ -1,11 +1,6 @@
-@import'./common/default';
 
-* {
-    margin: 0;
-    padding: 0;
-    color: inherit;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    border: none;
-}
+@import './common/fonts';
+@import './common/var';
+@import './common/mixin';
+@import './common/default';
+
