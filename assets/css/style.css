@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy/Gilroy-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy/Gilroy-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+:root {
+  --dark-gradient: linear-gradient(0deg, #211F20 0%, #44403F 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-style: inherit;
+}
+
+.wrapper {
+  font-family: "Gilroy", sans-serif;
+  background: var(--dark-gradient);
+}
+
+/*# sourceMappingURL=style.css.map */
