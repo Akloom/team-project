@@ -1,0 +1,73 @@
+.delivery {
+  margin-top: 50px;
+  @include flex(flex-start, start, column);
+
+  &__title {
+    padding-left: 20px;
+    border-left: 4px solid var(--green);
+    @include font(32px, 700, normal, var(--text-light));
+    text-transform: uppercase;
+  }
+}
+
+.faq {
+  margin-top: 40px;
+  @include flex(flex-start, center, null, 20px);
+
+  &__content {
+    max-width: 620px;
+    @include flex(null, center, column, 10px);
+  }
+
+  &__item{
+    @include flex(null, null, column, null);
+  }
+
+  &__question{
+    cursor: pointer;
+    @include flex(center, space-between, null, 10px);
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: var(--green-gradient);
+  }
+
+  &__title{
+    @include font(18px, 500, 35px, var(--text-light));
+  }
+
+  &__icon{
+    width: 24px;
+    height: 24px;
+    transition: .6s all;
+  }
+
+  &__answer{
+    border-radius: 10px;
+    background: var(--gray-gradient);
+    max-height: 0;
+    overflow: hidden;
+    transition: .6s all;
+  }
+
+  &__desc{
+    padding: 35px;
+    @include font(16px, 400, 25px, var(--text-light));
+  }
+
+  &__map {
+    max-width: 640px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.faq__item.active .faq__answer {
+  max-height: 600px;
+  padding-top: 20px;
+}
+
+.faq__item.active .faq__icon {
+  transform: rotate(180deg);
+}

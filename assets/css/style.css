@@ -15,8 +15,11 @@
 }
 :root {
   --white: #fff;
+  --green: #618967;
   --text-light: var(--white);
   --text-gray: #CFCFCF;
+  --green-gradient: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
+  --gray-gradient: linear-gradient(90deg, #494544 0%, #504B4A 100%);
   --dark-gradient: linear-gradient(0deg, #211F20 0%, #44403F 100%);
 }
 
@@ -36,6 +39,97 @@
 .wrapper {
   font-family: "Gilroy", sans-serif;
   background: var(--dark-gradient);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.delivery {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+}
+.delivery__title {
+  padding-left: 20px;
+  border-left: 4px solid var(--green);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.faq {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.faq__content {
+  max-width: 620px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq__item {
+  display: flex;
+  flex-direction: column;
+}
+.faq__question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: var(--green-gradient);
+}
+.faq__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  color: var(--text-light);
+}
+.faq__icon {
+  width: 24px;
+  height: 24px;
+  transition: 0.6s all;
+}
+.faq__answer {
+  border-radius: 10px;
+  background: var(--gray-gradient);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s all;
+}
+.faq__desc {
+  padding: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--text-light);
+}
+.faq__map {
+  max-width: 640px;
+}
+.faq__map img {
+  width: 100%;
+}
+
+.faq__item.active .faq__answer {
+  max-height: 600px;
+  padding-top: 20px;
+}
+
+.faq__item.active .faq__icon {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
