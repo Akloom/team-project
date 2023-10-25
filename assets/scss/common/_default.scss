@@ -1,0 +1,12 @@
+* {
+  @include reset-all-styles;
+}
+
+.wrapper{
+  font-family: "Gilroy", sans-serif;
+  background: var(--dark-gradient);
+}
+
+.container{
+  @include container(1280px);
+}

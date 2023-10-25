@@ -1,0 +1,197 @@
+.delivery {
+  padding: 0 20px;
+  margin-top: 50px;
+  @include flex(start, center, column);
+
+  &__heading {
+    padding-left: 20px;
+    border-left: 4px solid var(--green);
+    @include font(32px, 700, normal, var(--text-light));
+    text-transform: uppercase;
+  }
+
+  &__info {
+    margin-top: 40px;
+    max-width: 695px;
+    @include flex(null, null, column, 10px);
+  }
+
+  &__title {
+    @include font(20px, 700, 35px, var(--text-light));
+  }
+
+  &__desc {
+    @include font(20px, 400, 35px, var(--text-gray));
+  }
+}
+
+.faq {
+  margin-top: 40px;
+  @include flex(flex-start, center, row-reverse, 20px);
+
+  &__content {
+    max-width: 600px;
+    @include flex(null, center, column, 10px);
+  }
+
+  &__item {
+    @include flex(null, null, column, null);
+  }
+
+  &__question {
+    cursor: pointer;
+    @include flex(center, space-between, null, 50px);
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: var(--green-gradient);
+  }
+
+  &__title {
+    @include font(18px, 500, 35px, var(--text-light));
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    transition: .6s all;
+  }
+
+  &__answer {
+    border-radius: 10px;
+    background: var(--gray-gradient);
+    max-height: 0;
+    overflow: hidden;
+    transition: .6s all;
+  }
+
+  &__desc {
+    padding: 35px;
+    @include font(16px, 400, 25px, var(--text-light));
+  }
+
+  &__map {
+    max-width: 620px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.faq__item.active .faq__answer {
+  max-height: 600px;
+}
+
+.faq__item.active .faq__icon {
+  transform: rotate(180deg);
+}
+
+.schedule {
+  margin-top: 30px;
+  @include flex(start, null, null, 100px);
+
+  &__item {
+    @include flex(start, null, column, null);
+  }
+
+  &__title {
+    @include font(20px, 700, 35px, var(--text-light));
+  }
+
+  &__time {
+    @include font(20px, 400, 35px, var(--text-gray));
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .faq {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .delivery {
+
+    &__heading {
+      @include font(30px, null, null, null);
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .delivery {
+
+    &__heading {
+      padding-left: 15px;
+      @include font(24px, null, null, null);
+    }
+  }
+
+  .faq {
+    &__question {
+      padding: 15px 25px;
+    }
+
+    &__title {
+      @include font(16px, null, 25px, null);
+    }
+
+    &__desc {
+      padding: 25px;
+      @include font(14px, null, 20px, null);
+    }
+  }
+
+  .schedule {
+    @include flex(null, null, column, 15px);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .delivery {
+    margin-top: 40px;
+
+    &__heading {
+      padding-left: 10px;
+      @include font(20px, null, null, null);
+    }
+
+    &__info {
+      margin-top: 15px;
+    }
+
+    &__title {
+      @include font(18px, null, null, null);
+    }
+
+    &__desc {
+      @include font(18px, null, null, null);
+    }
+  }
+
+  .faq {
+    &__question {
+      padding: 15px 20px;
+    }
+
+    &__title {
+      @include font(14px, null, 15px, null);
+    }
+
+    &__desc {
+      padding: 20px;
+      @include font(12px, null, 15px, null);
+    }
+  }
+
+  .schedule {
+
+    &__title {
+      @include font(18px, null, null, null);
+    }
+
+    &__time {
+      @include font(18px, null, null, null);
+    }
+  }
+}

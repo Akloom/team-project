@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy/Gilroy-Bold.ttf");
+  font-weight: 700;
+}
+:root {
+  --white: #fff;
+  --green: #618967;
+  --text-light: var(--white);
+  --text-gray: #CFCFCF;
+  --green-gradient: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
+  --gray-gradient: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  --dark-gradient: linear-gradient(0deg, #211F20 0%, #44403F 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+}
+
+.wrapper {
+  font-family: "Gilroy", sans-serif;
+  background: var(--dark-gradient);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.delivery {
+  padding: 0 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.delivery__heading {
+  padding-left: 20px;
+  border-left: 4px solid var(--green);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+.delivery__info {
+  margin-top: 40px;
+  max-width: 695px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.delivery__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  color: var(--text-light);
+}
+.delivery__desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  color: var(--text-gray);
+}
+
+.faq {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.faq__content {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq__item {
+  display: flex;
+  flex-direction: column;
+}
+.faq__question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: var(--green-gradient);
+}
+.faq__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  color: var(--text-light);
+}
+.faq__icon {
+  width: 24px;
+  height: 24px;
+  transition: 0.6s all;
+}
+.faq__answer {
+  border-radius: 10px;
+  background: var(--gray-gradient);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s all;
+}
+.faq__desc {
+  padding: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--text-light);
+}
+.faq__map {
+  max-width: 620px;
+}
+.faq__map img {
+  width: 100%;
+}
+
+.faq__item.active .faq__answer {
+  max-height: 600px;
+}
+
+.faq__item.active .faq__icon {
+  transform: rotate(180deg);
+}
+
+.schedule {
+  margin-top: 30px;
+  display: flex;
+  align-items: start;
+  gap: 100px;
+}
+.schedule__item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.schedule__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  color: var(--text-light);
+}
+.schedule__time {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  color: var(--text-gray);
+}
+
+@media screen and (max-width: 1080px) {
+  .faq {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 920px) {
+  .delivery__heading {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .delivery__heading {
+    padding-left: 15px;
+    font-size: 24px;
+  }
+  .faq__question {
+    padding: 15px 25px;
+  }
+  .faq__title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .faq__desc {
+    padding: 25px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .delivery {
+    margin-top: 40px;
+  }
+  .delivery__heading {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .delivery__info {
+    margin-top: 15px;
+  }
+  .delivery__title {
+    font-size: 18px;
+  }
+  .delivery__desc {
+    font-size: 18px;
+  }
+  .faq__question {
+    padding: 15px 20px;
+  }
+  .faq__title {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .faq__desc {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .schedule__title {
+    font-size: 18px;
+  }
+  .schedule__time {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
