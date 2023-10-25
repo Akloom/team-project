@@ -3,11 +3,25 @@
   margin-top: 50px;
   @include flex(start, center, column);
 
-  &__title {
+  &__heading {
     padding-left: 20px;
     border-left: 4px solid var(--green);
     @include font(32px, 700, normal, var(--text-light));
     text-transform: uppercase;
+  }
+
+  &__info {
+    margin-top: 40px;
+    max-width: 695px;
+    @include flex(null, null, column, 10px);
+  }
+
+  &__title {
+    @include font(20px, 700, 35px, var(--text-light));
+  }
+
+  &__desc {
+    @include font(20px, 400, 35px, var(--text-gray));
   }
 }
 
@@ -98,7 +112,7 @@
 @media screen and (max-width: 920px) {
   .delivery {
 
-    &__title {
+    &__heading {
       @include font(30px, null, null, null);
     }
   }
@@ -107,7 +121,7 @@
 @media screen and (max-width: 620px) {
   .delivery {
 
-    &__title {
+    &__heading {
       padding-left: 15px;
       @include font(24px, null, null, null);
     }
@@ -137,9 +151,21 @@
   .delivery {
     margin-top: 40px;
 
-    &__title {
+    &__heading {
       padding-left: 10px;
       @include font(20px, null, null, null);
+    }
+
+    &__info {
+      margin-top: 15px;
+    }
+
+    &__title {
+      @include font(18px, null, null, null);
+    }
+
+    &__desc {
+      @include font(18px, null, null, null);
     }
   }
 
