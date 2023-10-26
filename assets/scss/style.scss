@@ -2,6 +2,7 @@
 @import "./common/var";
 @import "./common/mixin";
 
+@import "./common/default";
 .container {
   margin: 0 auto;
   max-width: 1096px;
@@ -18,6 +19,6 @@ html {
     width: 90%;
   }
 }
-@import "./common/default";
 
 @import "./include/cart";
+@import "./include/card_product";
