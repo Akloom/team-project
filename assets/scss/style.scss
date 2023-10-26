@@ -1,6 +1,14 @@
 @import './common/fonts';
 @import './common/var';
 @import './common/mixin';
-
+@import 'mixin';
+@import 'main';
+@import 'base';
+@import 'nav';
+@import 'stock';
+@import 'hamburger';
+@import 'block';
+@import 'footer';
+@import 'components';
 @import './common/default';
 @import './include/delivery';
