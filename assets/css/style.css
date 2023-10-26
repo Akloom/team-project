@@ -216,28 +216,42 @@ html {
   border-radius: 0.625rem;
   width: 13.0625rem;
 }
-.cart-goods-block-card-btn {
+.cart-goods-block-card-info {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cart-goods-block-card-info-price-btn {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-goods-block-card-info-btn {
   color: #c6ced1;
   display: flex;
   align-items: center;
+  flex-direction: row;
   gap: 0.4375rem;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.cart-goods-block-card-btn-icon {
+.cart-goods-block-card-info-btn-icon {
   padding: 0.3125rem;
   border-radius: 50%;
   background-color: #72a479;
 }
-.cart-goods-block-card-title {
+.cart-goods-block-card-info-title {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.cart-goods-block-card svg {
+.cart-goods-block-card-info svg {
   width: 0.75rem;
   height: 0.75rem;
 }
@@ -304,7 +318,7 @@ html {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 768px) {
   .cart-block {
     margin: 0;
   }
@@ -317,6 +331,9 @@ html {
   .cart-card-info-desc {
     display: none;
   }
+  .cart-card-actions-price-delete {
+    width: 40%;
+  }
   .cart-card-actions-numbers {
     margin: 5%;
   }
@@ -325,6 +342,35 @@ html {
   }
   .cart-goods-block-card {
     flex-direction: row;
+    text-align: center;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+  }
+  .cart-goods-block-card img {
+    width: 111px;
+  }
+  .cart-goods-block-card-info {
+    display: flex;
+    align-items: start;
+    text-align: left;
+  }
+  .cart-goods-block-card-info-title {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .cart-goods-block-card-info-price-btn {
+    flex-direction: row !important;
+  }
+  .cart-goods-block-card-info-price {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 }
 
