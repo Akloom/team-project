@@ -1,14 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="wrapper">
-    <h1>dskhflsd</h1>
+
+      <div class="modal-busket">
+        <div class="modal-item">
+          <h2 class="modal-title">Корзина (4)</h2>
+
+          <div class="busket-items">
+            <div class="busket-card">
+              <div class="busket-image">
+                <img src="assets/img/card-item1.jpg" alt="img">
+              </div>
+
+              <div class="busket-info">
+                <div class="busket-title-wrap">
+                  <h2 class="busket-title">Гусь</h2>
+                  <p class="busket-desc">Фаршированный гречневой кашей,
+                    курагой, апельсином и зеленым яблоком</p>
+                </div>
+
+                <div class="busket-btns">
+                  <button class="busket-btn"><i class="icon-minus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <header class="header">
+        <div class="navbar">
+          <div class="container container-nav">
+            <button class="hamburger hamburger--3dxy">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+
+            <a href="index.html" class="logo nav-logo">LOGOS</a>
+
+            <div class="nav-search">
+              <label class="nav-search-wrap">
+                <i class="icon-location nav-search-icon"></i>
+                <input type="text" placeholder="Введите адресс доставки" class="nav-search-input">
+                <i class="icon-search nav-search-icon"></i>
+              </label>
+            </div>
+
+            <div class="nav-contact">
+              <span class="nav-contact-subtitle">Контакты:</span>
+              <span class="nav-contact-title">+7 (917) 510-57-59</span>
+            </div>
+
+            <div class="nav-busket-wrap">
+              <a href="#" class="nav-busket">
+                Корзина
+                <div class="busket-count-wrap">
+                  <span class="nav-busket-count">4</span>
+                </div>
+              </a>
+            </div>
+
+
+            <nav class="nav-mobile">
+              <a href="index.html" class="nav-link">Главная</a>
+              <a href="#" class="nav-link">Карточка товара</a>
+              <a href="#" class="nav-link">Корзина</a>
+              <a href="contact.html" class="nav-link">Доставка</a>
+              <a href="#" class="nav-link">Акции</a>
+              <div class="nav-mobile-contact">
+                <span class="nav-mobile-subtitle">Контакты:</span>
+                <a class="nav-mobile-title" href="tel:+7 (917) 510-57-59">+7 (917) 510-57-59</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header-image">
+            <div class="header-image-info container">
+              <div class="header-image-wrap">
+                <img src="assets/img/header-text.svg" alt="img" class="header-image-info-1item">
+                <img src="assets/img/header-text2.svg" alt="img" class="header-image-info-2item">
+              </div>
+            </div>
+          </div>
+
+          <div class="text">
+            <a href="#item1" class="text__span text__span--active">Холодные закуски</a>
+            <a href="#item2" class="text__span">Горячие закуски</a>
+            <a href="#item3" class="text__span">Мясные блюда</a>
+            <a href="#" class="text__span">Супы</a>
+            <a href="#" class="text__span">Рыбные блюда</a>
+            <a href="#" class="text__span">Гриль меню</a>
+            <a href="#" class="text__span">Фирменные блюда</a>
+            <a href="#" class="text__span">Напитки</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+
+        <div class="container">
+
+          <h2 class="main-title" id="item1">Горячие закуски</h2>
+          <div class="main-card-wrap">
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item1.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item2.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item3.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item4.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item1.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item2.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h2 class="main-title" id="item2">Горячие закуски</h2>
+          <div class="main-card-wrap">
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item1.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item2.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item3.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item4.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item1.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item2.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h2 class="main-title" id="item3">Мясные блюда</h2>
+          <div class="main-card-wrap">
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item1.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item2.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item3.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item4.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item1.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-card">
+              <div class="main-card-image">
+                <img src="assets/img/card-item2.jpg" alt="img">
+                <span class="card-image-count">3</span>
+              </div>
+              <div class="main-card-content">
+                <div class="main-card-title">
+                  <h3 class="card-title">Гусь</h3>
+                  <span class="card-subtitle">Вес 225г</span>
+                </div>
+                <p class="main-card-desc">Фаршированный яблоками</p>
+
+                <div class="main-card-info">
+                  <button class="card-btn card-btn--hover"><i class="icon-minus"></i></button>
+                  <span class="card-price">450 ₽</span>
+                  <button class="card-btn">
+                    <span class="card-btn--default">В корзину</span>
+                    <span class="card-btn--edit"><i class="icon-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="banner container">
+            <div class="banner-info">
+              <h2 class="title">НАШЕ КАФЕ</h2>
+              <p>Мы расположены в одном из самых живописных мест города — на берегу реки, это ваш оазис в черте города,
+                куда можно сбежать от шумного и пыльного мегаполиса. Мы, действительно уникальные, ведь все продумано до
+                мелочей: проект построен из дикого закарпатского сруба, камин в основном зале ресторана и панорамные
+                окна с видом на реку, уютные беседки на берегу реки и лучшая видовая террасса, шатер с посадкой на 200
+                человек, сказочный детский домик и бассейн.</p>
+
+              <a href="#" class="banner-btn">ПОСМОТРЕТЬ МЕНЮ</a>
+            </div>
+
+            <div class="banner-block">
+              <div class="banner-block-item banner-block-item1">
+                <img src="assets/img/banner-item1.svg" alt="img">
+                <h3>Свежайшие продукты</h3>
+              </div>
+              <div class="banner-block-item banner-block-item2">
+                <img src="assets/img/banner-item2.svg" alt="img">
+                <h3>Быстрая доставка</h3>
+              </div>
+              <div class="banner-block-item banner-block-item3">
+                <img src="assets/img/banner-item3.svg" alt="img">
+                <h3>Лучшие повара</h3>
+              </div>
+              <div class="banner-block-item banner-block-item4">
+                <img src="assets/img/banner-item1.svg" alt="img">
+                <h3>Свежайшие продукты</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact container">
+            <div class="contact-card">
+              <h2 class="contact-main-title">Контакты</h2>
+              <hr>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="icon-location"></i>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-subtitle">Наш адресс:</span>
+                  <h2 class="contact-title">МО, городской округ Красногорск, село Ильинкое,
+                    Экспериментальная улица, 10</h2>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="icon-envelope"></i>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-subtitle">Наша почта</span>
+                  <h2 class="contact-title"><a href="mailto:auto.wash@gmail.comv"
+                      class="contact-link">auto.wash@gmail.com</a></h2>
+                </div>
+              </div>
+              <hr>
+              <div class="contact-flex">
+                <a href="#" class="contact-btn">Забронировать стол</a>
+                <div class="contact-number">
+                  <a href="tel:+7 (917) 510-57-59" class="contact-title contact-number-title">+7 (917) 510-57-59</a>
+                  <span class="contact-subtitle">Звоните или оставляйте заявку</span>
+                </div>
+              </div>
+              <div class="contact-social">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-web">
+                  <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+                  <a href="#" class="social-link"><i class="icon-vk"></i></a>
+                  <a href="#" class="social-link"><i class="icon-youtube"></i></a>
+                  <a href="#" class="social-link"><i class="icon-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      <footer class="foot">
+        <div class="container container-foot">
+          <div class="foot__up">
+            <a href="#"><i class="icon-arrow-up"></i></a>
+          </div>
+
+          <div class="foot__title">
+            <a href="#" class="logo">LOGOS</a>
+            <span class="foot__blocker">© ООО СК «АПШЕРОН» <br>
+              Все права защищены. 2010-2020</span>
+            <a class="foot__link" href="#">Пользовательское соглашение</a>
+            <a class="foot__link fll" href="#">Карта сайта</a>
+            <a class="foot__link" href="#">Политика конфиденциальности</a>
+          </div>
+
+          <div class="foot__main">
+            <a class="foot__main_link" href="#">О ресторане</a>
+            <a class="foot__main_link" href="contact.html">Условия доставки</a>
+            <a class="foot__main_link" href="#">Возврат товара</a>
+            <a class="foot__main_link" href="stock.html">Акции</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <div class="overlay"></div>
+      <script src="assets/js/script.js"></script>
+    </body>
+
+    </html>
   </div>
 </body>
+
 </html>

@@ -1,0 +1,262 @@
+.navbar {
+  background: #403C3B;
+  box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
+} 
+
+.container-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .hamburger {
+    display: none;
+    flex-grow: 1;
+    z-index: 12;
+  }
+
+  .nav-logo {
+    flex-grow: 1;
+  }
+
+  .nav-search {
+    background: #504B4A;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-grow: 2.5;
+
+    .nav-search-wrap {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      .nav-search-icon {
+        font-size: 20px;
+        color: #FFF;
+      }
+    }
+
+    &-input {
+      width: 100%;
+      padding: 16px 18px;
+      background: #504B4A;
+      color: #CFCFCF;
+      border: none;
+      outline: none;
+      
+      &::placeholder {
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: #CFCFCF;
+        
+      }
+
+
+    
+    }
+  }
+
+  .nav-contact {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    text-align: left;
+    
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    &-subtitle {
+      font-weight: 400;
+      color: #CFCFCF;
+      font-size: 0.75rem;
+    }
+
+    &-title {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+
+  .nav-busket {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.875rem;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    padding: 14px;
+
+    &-count {
+      padding: 5px 8px;
+      border-radius: 50%;
+      background: #fff;
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: #403C3B;
+    }
+
+    .busket-count-wrap {
+      border-left: 1px solid #fff;
+      padding-left: 12px;
+    }
+  }
+
+  .nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    padding: 90px 0 0 30px;
+    z-index: 11;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background: #333;
+    transform: translateX(-100%);
+    transition: .3s;
+    
+
+    &.is-active {
+      transform: translateX(0);
+    }
+
+    .nav-link {
+      font-weight: 600;
+      font-size: 1.875rem;
+      color: #fff;
+    
+    }
+
+    .nav-mobile-contact {
+      display: flex;
+      
+      flex-wrap: wrap;
+      flex-grow: 1;
+      gap: 20px;
+  
+      .nav-mobile-subtitle {
+        font-weight: 400;
+        color: #CFCFCF;
+        font-size: 0.75rem;
+      }
+  
+      .nav-mobile-title {
+        font-weight: 700;
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
+
+    @include _320px {
+      width: 100vw;
+    }
+  }
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(#000, 0.5);
+  transition: .3s;
+  z-index: 10;
+
+  
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@include _768px {
+  .container-nav {
+    flex-wrap: wrap;
+
+    .hamburger {
+      display: inline-flex !important;
+      order: 0;
+      flex-grow: 1;
+    }
+
+    .nav-logo {
+      order: 2;
+      flex-grow: 3;
+      text-align: center;
+    }
+
+    .nav-busket-wrap {
+      order: 3;
+      flex-grow: 1;
+
+      .nav-busket {
+        flex-direction: column;
+        gap: 1px;
+
+        .busket-count-wrap {
+          border-left: unset;
+          border-top: 1px solid #fff;
+          padding-left: 0;
+          padding-top: 7px;
+        }
+      }
+    }
+
+    .nav-search {
+      flex-basis: 100%;
+      order: 4;
+    }
+
+    .nav-contact {
+      display: none;
+    }
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+
+.header-image {
+  background: linear-gradient(90deg, #211F20 0%, rgba(68, 64, 63, 0) 100%), linear-gradient(90deg, #292728 30%, rgba(68, 64, 63, 0) 100%), url(../img/header-image.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &-info {
+    display: flex;
+    flex-direction: column;
+
+    .header-image-wrap {
+      max-width: 650px;
+      text-align: center;
+
+      .header-image-info-1item {
+        width: 100%;
+      }
+  
+      .header-image-info-2item {
+        max-width: 244.36px;
+      }
+
+      @include _768px {
+        width: 100%;
+      }
+    }
+
+    
+  }
+}
+

@@ -1,0 +1,143 @@
+
+.text {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+.text__span {
+  color: #cfcfcf;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  padding-bottom: 10px;
+
+  &--active {
+    border-bottom: 3px solid #618967;
+  }
+}
+.main_h1__span {
+  font-family: Gilroy;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  color: white;
+  text-transform: uppercase;
+}
+.main_h1 {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.summary {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  max-width: 618px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+  border-radius: 10px;
+  color: white;
+}
+
+.summary-icon-1,
+.summary-icon-2 {
+  display: none;
+}
+
+.active-icon {
+  display: inline-flex !important;
+}
+
+.details__h3 {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: white;
+  padding: 15px;
+  min-height: 68px;
+  max-width: 618px;
+  border-radius: 10px;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 100%;
+}
+.select_cont {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+  @include _992px {
+    flex-direction: column-reverse;
+  }
+}
+.img__map {
+  min-height: 231px;
+  max-width: 640px;
+  border-radius: 10px;
+}
+.img__map__img {
+  width: 100%;
+  height: 76%;
+}
+.schedule__work {
+  font-family: Gilroy;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.schedule__p {
+  font-family: Gilroy;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cfcfcf;
+}
+.schedule {
+  display: flex;
+  gap: 100px;
+  @include _992px {
+    flex-direction: column;
+  }
+}
+.text__order {
+  max-width: 697px;
+  margin-top: 50px;
+}
+.text__order__span {
+  font-family: Gilroy;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  color: white;
+}
+.text__order__p {
+  font-family: Gilroy;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cfcfcf;
+}

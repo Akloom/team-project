@@ -1,0 +1,98 @@
+.stock {
+  margin: 0 auto;
+  padding: 40px;
+
+  &__card {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+    overflow-x: auto;
+
+    &_img {
+      @include _992px {
+        width: 345px;
+        height: 141px;
+      }
+    }
+    &_first {
+      background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+      border-radius: 10px;
+      width: 440px;
+      height: 351px;
+
+      @include _992px {
+        width: 345px;
+        height: 289px;
+      }
+
+      &_block {
+        padding: 15px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        @include _992px {
+          padding: 15px;
+        }
+      }
+
+      &_title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: white;
+        @include _992px {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      &_p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #a6a7ab;
+        @include _992px {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &_date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6fa076;
+        margin-top: 14px;
+        @include _992px {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+.second-line {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @include _992px {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.third-line {
+  margin-bottom: 40px;
+  @include _992px {
+    margin-bottom: 30px;
+  }
+}
+.none {
+  display: none;
+
+  @include _992px {
+    display: block;
+  }
+}
