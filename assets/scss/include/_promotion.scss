@@ -55,3 +55,50 @@
     @include font(14px, 400, normal, var(--text-green));
   }
 }
+
+@media screen and (max-width: 920px) {
+  .promotion {
+    @include flex(null, null, null, 30px);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .promotion {
+    &__title {
+      @include font(24px, null, null, null);
+    }
+  
+    &__container {
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+  
+    &__content{
+      padding: 15px 15px;
+      @include flex(null, null, null, 15px);
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .promotion {
+    &__title {
+      @include font(20px, null, null, null);
+    }
+  
+    &__container {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    &__heading{
+      @include font(16px, null, null, null);
+    }
+  
+    &__desc{
+      @include font(12px, null, null, null);
+    }
+  
+    &__date{
+      @include font(12px, null, null, null);
+    }
+  }
+}
