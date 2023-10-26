@@ -9,4 +9,6 @@
 
 .container{
   @include container(1280px);
+  overflow: hidden;
+  position: relative;
 }

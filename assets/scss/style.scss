@@ -13,3 +13,19 @@
 @import './common/default';
 @import './include/delivery';
 @import './include/promotion';
+
+html {
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 0.75rem;
+  }
+  .container{
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@import "./include/cart";
+@import "./include/cardproduct";
